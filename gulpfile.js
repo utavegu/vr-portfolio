@@ -107,7 +107,8 @@ gulp.task("server", function () {
     ui: false
   });
   gulp.watch("source/less/**/*.less", gulp.series("css-dev"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  // gulp.watch("source/*.pug").on("change", server.reload);
+  gulp.watch("source/**/*.pug").on("change", gulp.series("pug", server.reload));
 });
 
 gulp.task("untrack", function () {
