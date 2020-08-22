@@ -1,0 +1,57 @@
+.footer-section .main-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  // left: 50%;
+  // margin-right: -50%;
+  // transform: translate(-50%);
+  background-color: black;
+  text-align: right;
+  width: 150px;
+}
+
+.footer__contacts a {
+  color: #fff;
+}
+
+.footer__social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .flex-container;
+  justify-content: space-around;
+}
+
+.social__item {
+  margin: 10px;
+}
+
+.social__button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+
+  &::before {
+    width: 40px;
+    height: 40px;
+    .pseudo-element
+  }
+
+  &--in::before {
+    background-image: url("../img/svg/icon-in.svg");
+  }
+
+  &--fb::before {
+    background-image: url("../img/svg/icon-fb.svg");
+  }
+
+  &--vk::before {
+    background-image: url("../img/svg/icon-vk.svg");
+  }
+
+  &--yt::before {
+    background-image: url("../img/svg/youtube.svg");
+  }
+}

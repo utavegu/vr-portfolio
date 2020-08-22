@@ -362,6 +362,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 a {
   text-decoration: none;
@@ -386,7 +387,6 @@ img {
 .main-wrapper {
   width: 320px;
   margin: auto;
-  background-color: gray;
 }
 @media (min-width: 768px) {
   .main-wrapper {
@@ -396,8 +396,6 @@ img {
 @media (min-width: 1280px) {
   .main-wrapper {
     width: 1200px;
-    -webkit-box-shadow: 0 10px 10px 3px rgba(100, 100, 100, 0.2);
-            box-shadow: 0 10px 10px 3px rgba(100, 100, 100, 0.2);
   }
 }
 .button {
@@ -423,6 +421,93 @@ img {
 }
 .button:disabled {
   background-color: #e5e5e5;
+}
+.portfolio__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.portfolio__item {
+  position: relative;
+  min-height: 200px;
+  width: auto;
+  background-color: red;
+  margin-bottom: 20px;
+}
+.portfolio__item img {
+  position: absolute;
+}
+.portfolio__item:hover {
+  z-index: 1;
+  -webkit-transform: scale(101%);
+          transform: scale(101%);
+}
+.portfolio__item-description {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  color: white;
+}
+.footer-section .main-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  text-align: right;
+  width: 150px;
+}
+.footer__contacts a {
+  color: #fff;
+}
+.footer__social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.social__item {
+  margin: 10px;
+}
+.social__button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+}
+.social__button::before {
+  width: 40px;
+  height: 40px;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social__button--in::before {
+  background-image: url("../img/svg/icon-in.svg");
+}
+.social__button--fb::before {
+  background-image: url("../img/svg/icon-fb.svg");
+}
+.social__button--vk::before {
+  background-image: url("../img/svg/icon-vk.svg");
+}
+.social__button--yt::before {
+  background-image: url("../img/svg/youtube.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

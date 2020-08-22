@@ -1,0 +1,33 @@
+.portfolio__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__item {
+  position: relative;
+  min-height: 200px;
+  width: auto;
+  background-color: red;
+  margin-bottom: 20px;
+
+  & img {
+    position: absolute;
+  }
+
+  &:hover {
+    z-index: 1;
+    transform: scale(101%);
+  }
+}
+
+.portfolio__item-description {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  color: white;
+}
