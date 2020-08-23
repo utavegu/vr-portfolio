@@ -11,6 +11,11 @@ block contentBlock
         li.portfolio__item
           a(href="./inner-page.html")
             picture
+              //- source(type="image/webp" media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x")
+              //- source(type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x")
+              //- source(type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x")
+              source(media="(min-width: 1280px)", srcset="img/cap_1280x600.png 1x, img/main-city-desktop@2x.jpg 2x")
+              source(media="(min-width: 768px)", srcset="img/cap_768x400.png 1x")
               img.portfolio__image(src="./img/cap_320x200.png", alt="Превью работы")
             .portfolio__demo
               .portfolio__youtube-preview
@@ -25,6 +30,8 @@ block contentBlock
         li.portfolio__item
           a(href="./inner-page.html")
             picture
+              source(media="(min-width: 1280px)", srcset="img/cap_1280x600.png 1x")
+              source(media="(min-width: 768px)", srcset="img/cap_768x400.png 1x")
               img.portfolio__image(src="./img/cap_320x200.png", alt="Превью работы")
             .portfolio__demo
               .portfolio__youtube-preview
@@ -39,6 +46,8 @@ block contentBlock
         li.portfolio__item
           a(href="./inner-page.html")
             picture
+              source(media="(min-width: 1280px)", srcset="img/cap_1280x600.png 1x")
+              source(media="(min-width: 768px)", srcset="img/cap_768x400.png 1x")
               img.portfolio__image(src="./img/cap_320x200.png", alt="Превью работы")
             .portfolio__demo
               .portfolio__youtube-preview
@@ -53,6 +62,8 @@ block contentBlock
         li.portfolio__item
           a(href="./inner-page.html")
             picture
+              source(media="(min-width: 1280px)", srcset="img/cap_1280x600.png 1x")
+              source(media="(min-width: 768px)", srcset="img/cap_768x400.png 1x")
               img.portfolio__image(src="./img/cap_320x200.png", alt="Превью работы")
             .portfolio__demo
               .portfolio__youtube-preview
@@ -67,6 +78,8 @@ block contentBlock
         li.portfolio__item
           a(href="./inner-page.html")
             picture
+              source(media="(min-width: 1280px)", srcset="img/cap_1280x600.png 1x")
+              source(media="(min-width: 768px)", srcset="img/cap_768x400.png 1x")
               img.portfolio__image(src="./img/cap_320x200.png", alt="Превью работы")
             .portfolio__demo
               .portfolio__youtube-preview
@@ -81,6 +94,8 @@ block contentBlock
         li.portfolio__item
           a(href="./inner-page.html")
             picture
+              source(media="(min-width: 1280px)", srcset="img/cap_1280x600.png 1x")
+              source(media="(min-width: 768px)", srcset="img/cap_768x400.png 1x")
               img.portfolio__image(src="./img/cap_320x200.png", alt="Превью работы")
             .portfolio__demo
               .portfolio__youtube-preview
@@ -95,6 +110,8 @@ block contentBlock
         li.portfolio__item
           a(href="./inner-page.html")
             picture
+              source(media="(min-width: 1280px)", srcset="img/cap_1280x600.png 1x")
+              source(media="(min-width: 768px)", srcset="img/cap_768x400.png 1x")
               img.portfolio__image(src="./img/cap_320x200.png", alt="Превью работы")
             .portfolio__demo
               .portfolio__youtube-preview

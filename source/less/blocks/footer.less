@@ -1,13 +1,11 @@
 .footer-section .main-wrapper {
   position: fixed;
   bottom: 0;
-  right: 0;
-  // left: 50%;
-  // margin-right: -50%;
-  // transform: translate(-50%);
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
   background-color: black;
   text-align: right;
-  width: 150px;
 }
 
 .footer__contacts a {
@@ -36,7 +34,13 @@
   &::before {
     width: 40px;
     height: 40px;
-    .pseudo-element
+    .pseudo-element;
+  }
+
+  &--mail::before {
+    background-image: url("../img/svg/icon-mail.svg");
+    background-color: #fff;
+    border-radius: 50%;
   }
 
   &--in::before {
